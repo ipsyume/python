@@ -1,0 +1,209 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.w{padding:1rem 0;font-family:var(--font-sans,sans-serif)}
+.stage{margin-bottom:18px;border-radius:var(--border-radius-lg);border:0.5px solid var(--color-border-tertiary);overflow:hidden}
+.sh{display:flex;align-items:center;gap:11px;padding:13px 16px;cursor:pointer;user-select:none}
+.sh:hover{background:var(--color-background-secondary)}
+.sn{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0}
+.si{flex:1}
+.st{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.ss{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.cv{font-size:11px;color:var(--color-text-tertiary);transition:transform .2s}
+.cv.o{transform:rotate(90deg)}
+.sb{display:none;padding:0 16px 16px}
+.sb.o{display:block}
+.bl{margin-top:14px}
+.bl-l{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-tertiary);margin-bottom:8px}
+.it{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--color-text-primary);line-height:1.6;margin-bottom:6px}
+.id{width:6px;height:6px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.rb{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:11px 13px;margin-top:8px;font-size:13px;line-height:1.75;color:var(--color-text-secondary)}
+.rb b{color:var(--color-text-primary);font-weight:500}
+.tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:20px;font-weight:500;margin-left:7px;vertical-align:middle}
+.t1{background:#FAECE7;color:#712B13}
+.t2{background:#EEEDFE;color:#3C3489}
+.t3{background:#E1F5EE;color:#085041}
+.t4{background:#FAEEDA;color:#633806}
+.t5{background:#E6F1FB;color:#0C447C}
+.nt{font-size:12px;color:var(--color-text-secondary);border-left:2px solid var(--color-border-secondary);padding:7px 10px;margin-top:12px;line-height:1.6}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}
+.gc{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:10px 12px;font-size:12px;line-height:1.65;color:var(--color-text-secondary)}
+.gc b{display:block;font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+.divider{border:none;border-top:0.5px solid var(--color-border-tertiary);margin:12px 0}
+</style>
+<div class="w">
+
+<div class="stage">
+  <div class="sh" onclick="t(this)">
+    <div class="sn" style="background:#FAECE7;color:#712B13">1</div>
+    <div class="si">
+      <div class="st">Learn the language <span class="tag t1">Month 1</span></div>
+      <div class="ss">Python Crash Course · Exercism · pythontutor · 2 hrs/day</div>
+    </div>
+    <span class="cv o">▶</span>
+  </div>
+  <div class="sb o">
+    <div class="bl">
+      <div class="bl-l">What to learn — in this order, no skipping</div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Variables, types, print, input — write 5 programs that actually do something for you personally</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Conditions + loops — build a number guessing game, a times-table printer, a basic calculator. Stay here until loops feel automatic</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Functions — rewrite everything you built above using functions. This is where coding starts clicking</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Lists and dictionaries — spend extra time here, do 15+ exercises. This is Python's soul and the foundation of all data work</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Strings — slice, split, join, format. You'll use these every single day in research code</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>File I/O + error handling — read/write files, try/except. Non-optional in any real project</span></div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Where to practice</div>
+      <div class="rb">
+        <b>Book: Python Crash Course — Eric Matthes (Part 1, Ch 1–11)</b><br>
+        Read a chapter. Close the book. Write the examples from memory. Do every exercise at the end. This is your daily anchor.<br><br>
+        <b>Problems: Exercism.io → Python track</b><br>
+        Free. Do 2 problems per day. Each one is small, auto-graded, and teaches one concept. Best beginner practice site that exists.<br><br>
+        <b>Debug: pythontutor.com</b><br>
+        Paste any confusing code and watch it run step-by-step. Use this whenever something breaks and you don't know why.<br><br>
+        <b>Environment: VS Code + Python extension only</b><br>
+        Plain .py files, run in terminal. No Jupyter yet — that comes later. Clean and fast.
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Month 1 project</div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Build a word frequency counter: read any .txt file, count how often each word appears, print the top 20. Uses everything — file I/O, dictionaries, sorting, functions. If you can build this without help, Month 1 is done.</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="sh" onclick="t(this)">
+    <div class="sn" style="background:#EEEDFE;color:#3C3489">2</div>
+    <div class="si">
+      <div class="st">Build problem-solving instincts <span class="tag t2">Month 2</span></div>
+      <div class="ss">Intermediate Python · LeetCode Easy · first real project · 3 hrs/day</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="sb">
+    <div class="bl">
+      <div class="bl-l">What to learn</div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Classes and OOP — write a 3D Point class, a BoundingBox, a Camera. Graphics and ML code is entirely object-oriented</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>List comprehensions + lambda — [x*2 for x in data]. Cleaner and faster. All ML code uses these constantly</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Modules — import your own code across files, understand how packages work. Every research repo is structured this way</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>NumPy — all of it. Arrays, slicing, broadcasting, vectorized ops. Spend 10 solid days here. This replaces for-loops in all scientific code</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Matplotlib basics — plot arrays, display images, visualize results. You'll use this to inspect every output you produce in the lab</span></div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Where to practice</div>
+      <div class="rb">
+        <b>NumPy: "100 NumPy Exercises" — free on GitHub</b><br>
+        Search: "100 numpy exercises rougier github". Do all 100 in order. Single best resource for making NumPy second nature.<br><br>
+        <b>Problems: LeetCode — Easy, arrays and strings only</b><br>
+        1 problem per day. Don't grind it — just keep your raw Python instincts sharp while you learn NumPy. Filter by tag: Array, String, Hash Table. These three tags cover 80% of what you'll need as an ML engineer.<br><br>
+        <b>Book: Python for Data Analysis — Wes McKinney</b><br>
+        Ch 4 (NumPy) and Ch 5 (Pandas) only. Written by the creator of Pandas. Most precise explanation of how NumPy actually works.
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Month 2 project</div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Load an image with NumPy (no OpenCV), apply a Gaussian blur manually using convolution, display before/after with Matplotlib. You've done DIP practicals — this is the same math, now you write it yourself in Python from scratch.</span></div>
+    </div>
+    <div class="nt">LeetCode note: you are NOT preparing for FAANG interviews. You're using it as a gym. Easy problems only, 1/day, until it becomes mechanical. The moment a problem feels hard, skip it and come back in a week.</div>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="sh" onclick="t(this)">
+    <div class="sn" style="background:#E1F5EE;color:#085041">3</div>
+    <div class="si">
+      <div class="st">PyTorch + Prof. Lee's slides together <span class="tag t3">Month 3</span></div>
+      <div class="ss">Deep learning tools · research code · 4 hrs/day split</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="sb">
+    <div class="bl">
+      <div class="bl-l">Run both tracks every day</div>
+      <div class="grid2">
+        <div class="gc"><b>Morning · 2 hrs — PyTorch</b>Learn the building blocks: tensors, autograd, nn.Module, training loop, data loading. Write everything from scratch — no copying.</div>
+        <div class="gc"><b>Afternoon · 2 hrs — Prof. Lee's slides</b>Every concept you don't understand, you write a small Python file that tests it. Frequency decomposition → FFT in NumPy. Video frames → load as tensors, manipulate them.</div>
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">PyTorch — exact learning order</div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Tensors — same as NumPy but GPU-ready. Reshape, slice, move between CPU and GPU</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Autograd — how gradients flow backward. Understand this deeply. It is the entire engine of deep learning</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>nn.Module — build a small network by hand: linear layers, activations, forward pass. No pretrained models yet</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Training loop — loss, .backward(), optimizer.step(). Write this from scratch at least 5 times until it's muscle memory</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Dataset + DataLoader — every real project starts here. Learn to load your own data cleanly</span></div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Where to practice</div>
+      <div class="rb">
+        <b>PyTorch: official "Learn the Basics" — pytorch.org/tutorials</b><br>
+        7 short tutorials. Do one per day for week 1. Then redo all 7 without looking at the code. Muscle memory matters here.<br><br>
+        <b>fast.ai Practical Deep Learning — free at course.fast.ai</b><br>
+        Lesson 1 only to start. Top-down approach — you run real models first, then understand internals. Extremely motivating. Jeremy Howard is the best ML teacher on the internet.<br><br>
+        <b>Papers with Code — paperswithcode.com</b><br>
+        Start reading the implementation of 1 paper per week. You don't need to understand everything — just read real research code and notice patterns. This is what separates ML engineers from tutorial followers.<br><br>
+        <b>Your own PhysiGS code</b><br>
+        Re-read it. You already implemented Cook-Torrance BRDF, COLMAP processing, Gaussian splatting training. That is real PyTorch. You know more than you think.
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Month 3 project</div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Train a small CNN on CIFAR-10 from scratch — no tutorials, just the PyTorch docs. Write the dataset loader, the model, the training loop, the evaluation. Plot loss curves with Matplotlib. This is the standard "can you actually do ML" proof of work.</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="sh" onclick="t(this)">
+    <div class="sn" style="background:#FAEEDA;color:#633806">4</div>
+    <div class="si">
+      <div class="st">During your masters — career-level Python <span class="tag t4">Ongoing</span></div>
+      <div class="ss">What to keep doing once you arrive in Taiwan · 1 hr/day alongside coursework</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="sb">
+    <div class="bl">
+      <div class="bl-l">Practice — keep this running the entire masters</div>
+      <div class="rb">
+        <b>LeetCode: move to Medium — 1 problem/day</b><br>
+        Tags: Array, Hash Table, Two Pointers, Sliding Window, Dynamic Programming (basic). ML engineers at top companies get asked these. Not urgent now — but by end of Year 1 in masters, you want 150+ Mediums solved.<br><br>
+        <b>Kaggle — kaggle.com</b><br>
+        Join 1 competition per month. Even finishing last teaches you more than any tutorial. The notebook ecosystem shows you how real practitioners write ML code. Start with "Getting Started" competitions.<br><br>
+        <b>Papers With Code — weekly habit</b><br>
+        Pick 1 paper from your lab's area. Find its official code. Read the training script. You don't implement — just read. Pattern recognition accumulates fast.<br><br>
+        <b>GitHub — build a public portfolio</b><br>
+        Every project you build goes here with a clean README. By end of Year 1: word counter, image blur, CNN trainer, 1 Kaggle notebook, 1 reproduction of a paper experiment. This is your ML engineer resume.
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">Books — read these slowly during masters, one chapter per week</div>
+      <div class="rb">
+        <b>Fluent Python — Luciano Ramalho</b><br>
+        Advanced Python internals — decorators, generators, metaclasses, async. What separates junior from senior Python engineers. Don't touch before September.<br><br>
+        <b>Designing Machine Learning Systems — Chip Huyen</b><br>
+        How ML actually works at companies — data pipelines, model serving, monitoring, deployment. Essential for ML engineer role. Read in Year 1.<br><br>
+        <b>Deep Learning — Goodfellow, Bengio, Courville (free PDF)</b><br>
+        The canonical textbook. Use as reference when coursework hits a topic — not for linear reading.<br><br>
+        <b>Mathematics for Machine Learning — Deisenroth (free PDF)</b><br>
+        Linear algebra, probability, calculus — the math under everything. Your DIP and linear algebra background means this will click faster than you expect.
+      </div>
+    </div>
+    <div class="bl">
+      <div class="bl-l">One thing that separates ML engineers from everyone else</div>
+      <div class="it"><div class="id" style="background:#BA7517"></div><span>Read research code on GitHub — not just tutorials. The MIT Missing Semester (free, one weekend) teaches you Git, shell, and debugging tools that make you 2x faster in any codebase. Do this in your first month in Taiwan.</span></div>
+    </div>
+    <div class="nt">By end of Year 1 in masters: solid LeetCode Medium habit, 1–2 Kaggle finishes, PhysiGS + lab projects on GitHub, Chip Huyen's book read. That profile gets you interviews at ML companies. Everything before September is just building the foundation for this.</div>
+  </div>
+</div>
+
+</div>
+<script>
+function t(h){
+  const b=h.nextElementSibling,c=h.querySelector('.cv');
+  const o=b.classList.contains('o');
+  b.classList.toggle('o',!o);
+  c.classList.toggle('o',!o);
+}
+</script>

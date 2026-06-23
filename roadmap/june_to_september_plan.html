@@ -1,0 +1,167 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.w{padding:1rem 0;font-family:var(--font-sans,sans-serif)}
+.month{margin-bottom:20px;border-radius:var(--border-radius-lg);border:0.5px solid var(--color-border-tertiary);overflow:hidden}
+.mh{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
+.mh:hover{background:var(--color-background-secondary)}
+.mbadge{padding:4px 14px;border-radius:20px;font-size:13px;font-weight:500;flex-shrink:0}
+.minfo{flex:1}
+.mtitle{font-size:15px;font-weight:500;color:var(--color-text-primary)}
+.msub{font-size:12px;color:var(--color-text-secondary);margin-top:2px}
+.cv{font-size:11px;color:var(--color-text-tertiary);transition:transform .2s}
+.cv.o{transform:rotate(90deg)}
+.mb{display:none;padding:0 16px 16px}
+.mb.o{display:block}
+.week{margin-top:14px;padding:12px 14px;background:var(--color-background-secondary);border-radius:var(--border-radius-md)}
+.wl{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-tertiary);margin-bottom:9px}
+.it{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--color-text-primary);line-height:1.6;margin-bottom:5px}
+.id{width:6px;height:6px;border-radius:50%;margin-top:7px;flex-shrink:0}
+.daily{margin-top:12px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);overflow:hidden}
+.daily-head{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;color:var(--color-text-tertiary);padding:8px 12px;background:var(--color-background-secondary)}
+.daily-row{display:flex;align-items:center;gap:0;border-top:0.5px solid var(--color-border-tertiary)}
+.dr-time{font-size:12px;font-weight:500;color:var(--color-text-secondary);padding:9px 12px;min-width:110px;border-right:0.5px solid var(--color-border-tertiary)}
+.dr-task{font-size:13px;color:var(--color-text-primary);padding:9px 12px;flex:1}
+.dr-dur{font-size:12px;color:var(--color-text-tertiary);padding:9px 12px;min-width:60px;text-align:right}
+.nt{font-size:12px;color:var(--color-text-secondary);border-left:2px solid var(--color-border-secondary);padding:7px 10px;margin-top:12px;line-height:1.6}
+.chk{margin-top:12px;padding:10px 13px;border-radius:var(--border-radius-md);font-size:13px;line-height:1.6;color:var(--color-text-secondary)}
+</style>
+
+<div class="w">
+
+<div class="month">
+  <div class="mh" onclick="t(this)">
+    <div class="mbadge" style="background:#FAECE7;color:#712B13">Jun 21 – Jul 13</div>
+    <div class="minfo">
+      <div class="mtitle">Python Crash Course — Part 1</div>
+      <div class="msub">Chapters 1–11 · 1 chapter every 2 days · Exercism daily</div>
+    </div>
+    <span class="cv o">▶</span>
+  </div>
+  <div class="mb o">
+    <div class="week">
+      <div class="wl">What you do every single day</div>
+      <div class="daily">
+        <div class="daily-head">Daily schedule · 4 hrs total</div>
+        <div class="daily-row"><div class="dr-time">Certificate work</div><div class="dr-task">Graded assignments, however you need to finish them</div><div class="dr-dur">1–1.5 hr</div></div>
+        <div class="daily-row"><div class="dr-time">PCC chapter</div><div class="dr-task">Day 1 of each chapter: read + type every example yourself</div><div class="dr-dur">1 hr</div></div>
+        <div class="daily-row"><div class="dr-time">PCC exercises</div><div class="dr-task">Day 2 of each chapter: all end-of-chapter exercises, no peeking</div><div class="dr-dur">1 hr</div></div>
+        <div class="daily-row"><div class="dr-time">Exercism</div><div class="dr-task">2 problems from Python track — every day, no exceptions</div><div class="dr-dur">30–45 min</div></div>
+      </div>
+    </div>
+    <div class="week">
+      <div class="wl">Chapter schedule</div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jun 21–22 — Ch 1 (setup) + Ch 2 (variables) · do both in 2 days, they are short</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jun 23–24 — Ch 3 (lists intro)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jun 25–26 — Ch 4 (working with lists)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jun 27–28 — Ch 5 (if statements)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jun 29–30 — Ch 6 (dictionaries) · heaviest chapter, go slow</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 1–2 — Ch 7 (user input + while loops)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 3–4 — Ch 8 (functions) · very important, take your time</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 5–6 — Ch 9 (classes) · most important chapter in the book</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 7–8 — Ch 10 (files and exceptions)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 9–10 — Ch 11 (testing your code)</span></div>
+      <div class="it"><div class="id" style="background:#D85A30"></div><span>Jul 11–13 — build the word frequency project from scratch, no help</span></div>
+    </div>
+    <div class="chk" style="background:#FAECE7;color:#712B13">Checkpoint Jul 13: write a program that reads a .txt file, counts word frequency, prints top 20 words. No help, no hints. If you can do this — you own Part 1.</div>
+  </div>
+</div>
+
+<div class="month">
+  <div class="mh" onclick="t(this)">
+    <div class="mbadge" style="background:#EEEDFE;color:#3C3489">Jul 14 – Aug 3</div>
+    <div class="minfo">
+      <div class="mtitle">NumPy + Intermediate Python</div>
+      <div class="msub">100 NumPy Exercises · LeetCode Easy · image project</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="mb">
+    <div class="week">
+      <div class="wl">What you do every single day</div>
+      <div class="daily">
+        <div class="daily-head">Daily schedule · 4 hrs total</div>
+        <div class="daily-row"><div class="dr-time">NumPy exercises</div><div class="dr-task">5 exercises from "100 NumPy Exercises" — understand each one, don't just copy</div><div class="dr-dur">1.5 hrs</div></div>
+        <div class="daily-row"><div class="dr-time">Python for Data Analysis</div><div class="dr-task">Ch 4 then Ch 5 — read + retype examples. McKinney explains NumPy internals better than anyone</div><div class="dr-dur">1 hr</div></div>
+        <div class="daily-row"><div class="dr-time">LeetCode Easy</div><div class="dr-task">1 problem — Array or String or Hash Table tags only. Attempt first, look at solution after 20 min</div><div class="dr-dur">30 min</div></div>
+        <div class="daily-row"><div class="dr-time">OOP practice</div><div class="dr-task">Write one class per day — 3D Point, BoundingBox, Matrix, ImagePatch, Camera. Keep them small</div><div class="dr-dur">30 min</div></div>
+      </div>
+    </div>
+    <div class="week">
+      <div class="wl">Week breakdown</div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Jul 14–20 — NumPy exercises 1–35 + McKinney Ch 4 + OOP basics (lists, dicts, classes combining)</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Jul 21–27 — NumPy exercises 36–70 + McKinney Ch 5 (Pandas basics) + list comprehensions deeply</span></div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Jul 28–Aug 3 — NumPy exercises 71–100 + Matplotlib basics (plot arrays, show images) + build project</span></div>
+    </div>
+    <div class="week">
+      <div class="wl">Project — build this in the last 3 days (Aug 1–3)</div>
+      <div class="it"><div class="id" style="background:#534AB7"></div><span>Load any image as a NumPy array. Apply Gaussian blur manually — write the convolution yourself, no OpenCV. Display original vs blurred side by side with Matplotlib. You did this in DIP practicals — now do it purely in Python from scratch.</span></div>
+    </div>
+    <div class="chk" style="background:#EEEDFE;color:#3C3489">Checkpoint Aug 3: can you implement a 2D convolution using only NumPy loops and array operations? If yes — you're ready for PyTorch.</div>
+  </div>
+</div>
+
+<div class="month">
+  <div class="mh" onclick="t(this)">
+    <div class="mbadge" style="background:#E1F5EE;color:#085041">Aug 4 – Aug 24</div>
+    <div class="minfo">
+      <div class="mtitle">PyTorch + Prof. Lee's slides</div>
+      <div class="msub">pytorch.org tutorials · fast.ai Lesson 1 · CNN project · slides daily</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="mb">
+    <div class="week">
+      <div class="wl">What you do every single day</div>
+      <div class="daily">
+        <div class="daily-head">Daily schedule · 4 hrs total</div>
+        <div class="daily-row"><div class="dr-time">PyTorch tutorial</div><div class="dr-task">One official tutorial per day (week 1), then redo all 7 without looking (week 2)</div><div class="dr-dur">1.5 hrs</div></div>
+        <div class="daily-row"><div class="dr-time">Prof. Lee slides</div><div class="dr-task">Go through slides — every concept you don't understand, write a Python file testing it</div><div class="dr-dur">1.5 hrs</div></div>
+        <div class="daily-row"><div class="dr-time">LeetCode Easy</div><div class="dr-task">Keep doing 1/day — same tags. Don't stop this habit</div><div class="dr-dur">30 min</div></div>
+        <div class="daily-row"><div class="dr-time">Papers with Code</div><div class="dr-task">Read 1 research implementation per week — just read, don't implement yet</div><div class="dr-dur">30 min</div></div>
+      </div>
+    </div>
+    <div class="week">
+      <div class="wl">Week breakdown</div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Aug 4–10 — PyTorch official tutorials 1–7 (tensors → autograd → nn.Module → training loop → DataLoader). One per day. Type every line yourself.</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Aug 11–17 — Redo all 7 tutorials from memory. Watch fast.ai Lesson 1. Start the CNN project.</span></div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Aug 18–24 — Finish CNN project. Read your own PhysiGS code again — connect it to PyTorch concepts you now understand.</span></div>
+    </div>
+    <div class="week">
+      <div class="wl">Project — CNN from scratch (Aug 11–24)</div>
+      <div class="it"><div class="id" style="background:#1D9E75"></div><span>Train a small CNN on CIFAR-10. Write the Dataset loader, model architecture, training loop, evaluation — all yourself. No tutorial to copy. Plot loss + accuracy curves. Put it on GitHub with a clean README. This is your proof that you can do ML.</span></div>
+    </div>
+    <div class="chk" style="background:#E1F5EE;color:#085041">Checkpoint Aug 24: can you open a GitHub repo from Prof. Lee's lab and read the training script without freezing? If yes — you are ready for September 4.</div>
+  </div>
+</div>
+
+<div class="month">
+  <div class="mh" onclick="t(this)">
+    <div class="mbadge" style="background:#F1EFE8;color:#444441">Aug 25 – Sep 2</div>
+    <div class="minfo">
+      <div class="mtitle">Consolidate — stop adding, start settling</div>
+      <div class="msub">No new topics · review · pack · rest</div>
+    </div>
+    <span class="cv">▶</span>
+  </div>
+  <div class="mb">
+    <div class="week">
+      <div class="wl">What to do — 2 hrs/day max</div>
+      <div class="it"><div class="id" style="background:#888780"></div><span>Re-read your PhysiGS code one more time. Write comments explaining every function. You'll thank yourself in the lab.</span></div>
+      <div class="it"><div class="id" style="background:#888780"></div><span>Write your Python cheat sheet — 1 page, your own words, the 20 patterns you used most. Print it. Carry it to Taiwan.</span></div>
+      <div class="it"><div class="id" style="background:#888780"></div><span>Clean up your GitHub — PhysiGS repo, word frequency project, image blur project, CNN project. Each needs a 3-line README minimum.</span></div>
+      <div class="it"><div class="id" style="background:#888780"></div><span>Read MIT Missing Semester (free online) — Shell + Git chapters only. One afternoon. Massive lab productivity boost.</span></div>
+      <div class="it"><div class="id" style="background:#888780"></div><span>Do not start anything new. No new books, no new courses. Let everything settle.</span></div>
+    </div>
+    <div class="nt">These 9 days are for logistics — visa, packing, rest. Keep Python to 2 hours max. Arriving rested matters more than cramming one more concept.</div>
+  </div>
+</div>
+
+</div>
+<script>
+function t(h){
+  const b=h.nextElementSibling,c=h.querySelector('.cv');
+  const o=b.classList.contains('o');
+  b.classList.toggle('o',!o);c.classList.toggle('o',!o);
+}
+</script>
